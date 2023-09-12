@@ -13,4 +13,8 @@
     <ProjectReference Include="..\MyDemo.Lib\MyDemo.Lib.fsproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Update="FSharp.Core" Version="7.0.400" />
+  </ItemGroup>
+
 </Project>
