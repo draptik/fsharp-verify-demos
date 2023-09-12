@@ -52,7 +52,7 @@ Create the projects:
 ```sh
 dotnet new classlib -o src/MyDemo.Lib -lang f#
 dotnet new console -o src/MyDemo.Ui -lang f#
-dotnet new xunit -o test/MyDemo.Lib.Tests -lang f#
+dotnet new xunit -o tests/MyDemo.Lib.Tests -lang f#
 ```
 
 Wireup: Setup references between projects:
