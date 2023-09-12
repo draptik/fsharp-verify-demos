@@ -1,0 +1,9 @@
+# Trying to tell git not to mess with line endings. 
+# Never, under no circumstances, should git ever do anything (!) with line endings. Period.
+# If necessary, use .editorconfig.
+#
+# This should work, [according to the
+# docs](https://git-scm.com/docs/gitattributes/2.24.0#Documentation/gitattributes.txt-Unset-1)
+#
+* -text
+
