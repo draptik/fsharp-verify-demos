@@ -1,5 +1,3 @@
-﻿namespace MyDemo.Lib
+﻿module MyDemo.Lib.Api
 
-module Say =
-    let hello name =
-        printfn "Hello %s" name
+let add x y = x + y
