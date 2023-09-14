@@ -11,6 +11,7 @@
     <Compile Include="Verifier.fs" />
     <Compile Include="Library.Tests.fs" />
     <Compile Include="Program.fs" />
+    <Folder Include="snapshots\" />
   </ItemGroup>
 
   <ItemGroup>
