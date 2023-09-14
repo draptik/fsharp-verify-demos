@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Verifier.fs" />
     <Compile Include="Library.Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
