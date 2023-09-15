@@ -65,7 +65,7 @@ dotnet add tests/MyDemo.Lib.Tests reference src/MyDemo.Lib
 ## Step 3: Add projects to solution
 
 ```sh
-dotnet sln add src/MyDemo.Lib src/MyDemo.Ui src/MyDemo.Lib.Tests
+dotnet sln add src/MyDemo.Lib src/MyDemo.Ui tests/MyDemo.Lib.Tests
 ```
 
 ## Step 4: Test setup with IDE
