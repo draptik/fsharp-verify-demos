@@ -9,10 +9,10 @@ open DiffEngine
 open VerifyTests
 open VerifyXunit
 
-let inline verify (value: 't :> obj) =
+let inline verify_internal (value: 't :> obj) =
     Verifier.Verify(value :> obj).ToTask() :> Task
 
-let inline verify' (settings: VerifySettings) (value: 't :> obj) =
+let inline verify_internal_with_settings (settings: VerifySettings) (value: 't :> obj) =
     Verifier.Verify(value :> obj, settings).ToTask() :> Task
 
 let inline verifyUsingParameters parameters (value: 't :> obj) =
@@ -27,6 +27,9 @@ let verifySettings =
     settings.UseDirectory "snapshots"
     settings.AddExtraSettings(fun s -> s.NullValueHandling <- NullValueHandling.Include)
     settings
+
+let verify value =
+    verify_internal_with_settings verifySettings value
 
 // TODO: Not really sure were this info should be placed...
 let initializeDiffTool () =
