@@ -1,3 +1,6 @@
-﻿module MyDemo.Lib.Api
+﻿module MyDemo.Lib
 
-let add x y = x + y
+type SimpleName = {
+    FirstName: string
+    LastName: string
+}
