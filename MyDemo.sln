@@ -10,8 +10,19 @@ EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDemo.Ui", "src\MyDemo.Ui\MyDemo.Ui.fsproj", "{9B9C5B0C-1134-4B36-B2F7-EAFBB1D5C835}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9A154E49-9F1D-408C-A865-9AA9FEA4A1F4}"
+	ProjectSection(SolutionItems) = preProject
+		tests\.gitignore = tests\.gitignore
+		tests\.gitattributes = tests\.gitattributes
+		tests\.editorconfig = tests\.editorconfig
+	EndProjectSection
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "MyDemo.Lib.Tests", "tests\MyDemo.Lib.Tests\MyDemo.Lib.Tests.fsproj", "{E73F2898-C32F-4594-91D0-D56719180A01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFolder", "SolutionFolder", "{399D91FC-5B11-4B03-802F-CCD6334D7B9F}"
+	ProjectSection(SolutionItems) = preProject
+		initial-setup.md = initial-setup.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
