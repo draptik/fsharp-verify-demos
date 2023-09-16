@@ -13,7 +13,7 @@ let ``Example 1`` () =
 [<Fact>]
 let ``Example 2 using a custom output folder`` () =
     let simpleMap = Map [1, "a"; 2, "b"]
-    Verifier.verify_internal_with_settings Verifier.verifySettings simpleMap
+    Verifier.verify_internal_with_settings Verifier.customizedVerifySettings simpleMap
 
 [<Fact>]
 let ``Example 3 another wrapper`` () =

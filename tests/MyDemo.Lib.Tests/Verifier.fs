@@ -21,15 +21,17 @@ let inline verifyUsingParameters parameters (value: 't :> obj) =
 let inline verifyUsingParameters' parameters (settings: VerifySettings) (value: 't :> obj) =
     Verifier.Verify(value :> obj, settings).UseParameters(parameters).ToTask() :> Task
 
-// TODO: Not really sure were this info should be placed...
-let verifySettings =
+let customizedVerifySettings =
     let settings = VerifySettings ()
     settings.UseDirectory "snapshots"
     settings.AddExtraSettings(fun s -> s.NullValueHandling <- NullValueHandling.Include)
     settings
 
+/// The public "API" function
+///
+/// Uses `customizedVerifySettings`
 let verify value =
-    verify_internal_with_settings verifySettings value
+    verify_internal_with_settings customizedVerifySettings value
 
 // TODO: Not really sure were this info should be placed...
 let initializeDiffTool () =
